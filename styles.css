@@ -1,0 +1,47 @@
+/* .css is for formatting, it can be called anything .css.  In order to get this you have to go to "create file" and create XX.css file */
+/*don't forget to save!*/
+body{
+    background-color: black;
+    /*background-image: url(bschool.jpg);*/
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.5;
+    filter: alpha(opacity=50);}
+ 
+/*.bschool {width: 800px}*/
+
+/*selectors = {} = applies to everything that is a p<> in HTML*/
+/*css specifity --> the more specific rule wins (not order), when something is done twice, order is bottom up!*/
+
+/*for only paragraph classes, use a p.class not a #*/
+.title {
+    color: #28b7aa;
+    text-align: center;
+    font-style:italic}
+
+.category{
+    color: whitesmoke
+}
+
+.comments {
+    color: goldenrod
+}
+
+#second {
+    color: green;
+}
+
+#wine {
+    width: 100px}
+/*for classes, use a . not a #*/
+.tacos {
+     color: #28b7aa;
+    box-shadow: salmon} /*FOUND THIS COLOR BY GOING TO INSPECT < WEB BROWSER>
+
+/*for only paragraph classes, use a p.class not a #*/
+p.tacos {
+    color: blue}
+
+/*for only paragraph classes, use a p.class not a #*/
+p.tacos.pizza {
+    color: purple}

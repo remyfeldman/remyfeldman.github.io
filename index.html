@@ -1,29 +1,42 @@
+<!--must have file that is index.html-->
+<!--MUST SAVE TO SEE IT ON OUR DEVELOPER SITE-->
+<!--ON DEVELOPER SITE, TO SEE WHAT'S GOING ON/DIAGNOSE, YOU CAN CLICK WORD ON SITE, RIGHT CLICK INSPECT AND CAN SEE THE RULES AND MAKE ADJUSTMENTS.  WILL NEED TO GO BACK TO INDEX/STYLES TO ACTUALLY IMPLEMENT THOUGH
+    CROSSED OUT RULES HERE BASICALLY SAY THAT THIS ISN'T APPLYING BUT WOULD IF NOT FOR MORE SPECIFIC RULE->
 <!DOCTYPE html>
 <html>
 <head>
+    <!--title is the tab name-->
     <title>Remsta's Ghetto Fab Wisdom</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a name = "top"></a>
-    <h1>Top Procrastination Tactics I've Learned While in B-school!</h1>
-    <h2><p>1. Alcohol: The number one most important B-school accessory</h2>
-    <p> Hey, it's always 5 o'clock somewhere. And yes, <a href = https://www.target.com/p/cabernet-sauvignon-red-wine-3l-box-wine-cube-153/-/A-13462181"> Target's </a> boxed wine is delicious. </p>
-    <p><img src ="Wine.jpg" height="200" > </p>
+    <h1 class="title">Top Procrastination Tactics I've Learned While in B-school!</h1>
+    <!--The ID function is used when you want ID to uniquely identify elements,
+            ID is one element on the page that I'm targeting only (e.g. can't have #first twice here),
+            so basicaly should always use CLASS-->
+    <h2><p class="category">1. Alcohol: The number one most important B-school accessory</h2>
+    <p class = "comments" >Hey, it's always 5 o'clock somewhere. And yes, <a href = https://www.target.com/p/cabernet-sauvignon-red-wine-3l-box-wine-cube-153/-/A-13462181"> Target's </a> boxed wine is delicious. </p>
+    <!--EVERY ID HAS TO BE DIFFERENT, CAN'T USE MORE THAN ONCE, BUT CAN USE CLASS FUNCTION JUST LIKE ID AND CAN USE FOR MORE THAN ONE LINE-->
+    <p class="tacos">being a classest with tacos</p>
+    <p class="tacos pizza">being a classest with tacos and pizza</p>
+    <!--Here I have ID called wine (for CSS) but if I still have height = 200 than it doesn't work-->
+    <p><img id = wine" src ="Wine.jpg" height="200" > </p>
 
-    <h2><p>2. Travel: The reason we are all poor but our insta stories give you serious FOMO</p></h2>
-    <p> Gamblin with my monopoly money</p>
+    <h2><p class="category">2. Travel: The reason we are all poor but our insta stories give you serious FOMO</p></h2>
+    <p class = "comments" > Gamblin with my monopoly money</p>
     <p><img src ="vegas.jpg" height="200"> </p>
 
-    <h2><p>3. Netflix: or Hulu or Prime or Youtube </p></h2>
-    <p> Try to watch one episode, I dare you </p> 
+    <h2><p class="category">3. Netflix: or Hulu or Prime or Youtube </p></h2>
+    <p class = "comments" >Try to watch one episode, I dare you </p> 
     <p><img src ="Netflix.jpg" height="200"> </p>
 
-    <h2><p>4. Gossip: it's way more fun than that acounting homework</p></h2>
-    <p> Did you hear about that professor who insists you make your own website in the <u>first</u> class? </p>
+    <h2><p class="category">4. Gossip: it's way more fun than that acounting homework</p></h2>
+    <p class = "comments" > Did you hear about that professor who insists you make your own website in the <u>first</u> class? </p>
     <p><img src ="Gossip.png" height="200"> </p>
 
-    <h2><p>5. Old-school board games</p></h2>
-    <p> I may only do Monday crosswords but I'm expending brain-cells so that counts, right?</p>
+    <h2><p class="category">5. Old-school board games</p></h2>
+    <p class = "comments" > I may only do Monday crosswords but I'm expending brain-cells so that counts, right?</p>
     <p><img src ="crossword.png" height="200"> </p>
     <a href = "#top" > Show me again! </a>
     <p><a href="about.html">About Me</a></p>
