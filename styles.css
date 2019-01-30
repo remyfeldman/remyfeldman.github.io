@@ -1,3 +1,4 @@
+/*getbootstrap.com is the CSS grid we'll be using*/
 /* .css is for formatting, it can be called anything .css.  In order to get this you have to go to "create file" and create XX.css file */
 /*don't forget to save!*/
 body{
@@ -27,9 +28,15 @@ body{
     color: goldenrod
 }
 
+.categorypic {
+    border-color: white
+}
+
 #second {
     color: green;
 }
+
+
 
 #wine {
     width: 100px}
