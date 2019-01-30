@@ -1,46 +1,111 @@
-<!--must have file that is index.html-->
-<!--MUST SAVE TO SEE IT ON OUR DEVELOPER SITE-->
-<!--ON DEVELOPER SITE, TO SEE WHAT'S GOING ON/DIAGNOSE, YOU CAN CLICK WORD ON SITE, RIGHT CLICK INSPECT AND CAN SEE THE RULES AND MAKE ADJUSTMENTS.  WILL NEED TO GO BACK TO INDEX/STYLES TO ACTUALLY IMPLEMENT THOUGH
-    CROSSED OUT RULES HERE BASICALLY SAY THAT THIS ISN'T APPLYING BUT WOULD IF NOT FOR MORE SPECIFIC RULE->
-<!DOCTYPE html>
-<html>
+<!--first thing to do, is type DOC and tab to get new new page (head and body)
+USE GETBOOTSTRAP.COM-->
+<html lang="en">
 <head>
-    <!--title is the tab name-->
-    <title>Remsta's Ghetto Fab Wisdom</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Almanac LLC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!--^the above link comes from getbootstrap.com-->
+<link rel="stylesheet" href="styles2.css">
+<!--^the above link comes from your style, this style would win because it's below the other-->
 </head>
 <body>
-    <a name = "top"></a>
-    <h1 class="title">Top Procrastination Tactics I've Learned While in B-school!</h1>
-    <!--The ID function is used when you want ID to uniquely identify elements,
-            ID is one element on the page that I'm targeting only (e.g. can't have #first twice here),
-            so basicaly should always use CLASS-->
-    <h2><p class="category">1. Alcohol: The number one most important B-school accessory</h2>
-    <p class = "comments" >Hey, it's always 5 o'clock somewhere. And yes, <a href = https://www.target.com/p/cabernet-sauvignon-red-wine-3l-box-wine-cube-153/-/A-13462181"> Target's </a> boxed wine is delicious. </p>
-    <!--EVERY ID HAS TO BE DIFFERENT, CAN'T USE MORE THAN ONCE, BUT CAN USE CLASS FUNCTION JUST LIKE ID AND CAN USE FOR MORE THAN ONE LINE-->
-    <p class="tacos">being a classest with tacos</p>
-    <p class="tacos pizza">being a classest with tacos and pizza</p>
-    <!--Here I have ID called wine (for CSS) but if I still have height = 200 than it doesn't work-->
-    <p><img class = "categorypic" src ="Wine.jpg" height="200" > </p>
+    <!--don't need to put this in the container
+        because i put this outside of the container, it's not in the container-->
+          <!--  img src="fox_engrave1.png" height = "60"alt=""-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="fox_engrave1.png" height = "70" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>
 
-    <h2><p class="category">2. Travel: The reason we are all poor but our insta stories give you serious FOMO</p></h2>
-    <p class = "comments" > Gamblin with my monopoly money</p>
-    <p><img class = "categorypic" src ="vegas.jpg" height="200"> </p>
-
-    <h2><p class="category">3. Netflix: or Hulu or Prime or Youtube </p></h2>
-    <p class = "comments" >Try to watch one episode, I dare you </p> 
-    <p><img class = "categorypic" src ="Netflix.jpg" height="200"> </p>
-
-    <h2><p class="category">4. Gossip: it's way more fun than that acounting homework</p></h2>
-    <p class = "comments" > Did you hear about that professor who insists you make your own website in the <u>first</u> class? </p>
-    <p><img class = "categorypic" src ="Gossip.png" height="200"> </p>
-
-    <h2><p class="category">5. Old-school board games</p></h2>
-    <p class = "comments" > I may only do Monday crosswords but I'm expending brain-cells so that counts, right?</p>
-    <p><img class = "categorypic" src ="crossword.png" height="200"> </p>
-    <a href = "#top" > Show me again! </a>
-    <p><a href="about.html">About Me</a></p>
+    <div class="container-fluid">
+    <div class="jumbotron">
+            <h1 class="display-4"> Almanac Business LLC</h1>
+            <p class="lead"> <em> New Way to Trade </em></p>
+            <hr class="my-4">
+           <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+</div>
+    <div class="container-fluid">
+    <div class="row">
+    <!--^row makes it so each container ends up next to one another-->
+        <div class="col-lg-4 col-md-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="Bull_Bear.png" alt="">
+                     <div class="overlay">
+                        <h2>Our Company</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
+            </div>
+        </div>  
+        <div class="col-lg-4 col-md-12">
+                <div class="hovereffect1">
+                    <img class="img-responsive" src="Graphs.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Our Strategy</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
+                </div>
+        </div> 
+        <div class="col-lg-4 col-md-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="Andy.jpg" alt="">
+                <div class="overlay">
+                    <h2>Meet Our Founder</h2>
+                    <a class="info" href="#">link here</a>
+                </div>
+            </div>
+   <!--     </div>
+        <div class="col-lg-4 col-md-12">
+                <div class="hovereffect2">
+                    <img class="img-responsive" src="Andy.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Meet Our Founder</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        
+    <!--^div is a generic element, doesn't create style on it's own but is basically the large box/container-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--^the above scrip links comes from getbootstrap.com-->
 </body>
 </html>
-<!--DRY -- don't repeat yourself/don't reinvent, use CSS FRAMEWORKS (STYLE SHEETS PEOPLE HAVE WRITTEN BEFORE
-responsive design - design is responding to screen size-->
